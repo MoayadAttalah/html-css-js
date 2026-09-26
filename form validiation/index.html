@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<form name="login" id="form">
+
+<input type="number" name="number" id="tt"  >
+<button type="button" id="checkb">check</button>
+
+<input type="submit" >
+
+</form>
+
+
+<script>
+
+
+
+
+let x=document.querySelector("#tt");
+let y=document.querySelector("#checkb");
+let f=document.getElementById("form")
+.addEventListener("submit",function(a){
+
+if (x.value<10){
+    a.preventDefault();
+}
+
+
+
+})
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

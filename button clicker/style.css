@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+#top-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  gap: 8%;
+  height: 55px;
+  background-color: darkgray;
+  margin: 0 auto;
+  align-items: center;
+}
+#dog,
+#search,
+#login-button {
+  height: 30px;
+}
+#doj {
+  font-size: x-large;
+  font-weight: bold;
+  
+}
+#search {
+  width: 25vw;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  width: 80%;
+  height: 50vh;
+  gap: 2%;
+}
+.rowOne {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  gap: 16%;
+  width: 60%;
+  height: 25vh;
+  margin-top: 3%;
+  padding-left: 16px;
+}
+aside {
+  width: 30%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0 6px 16px;
+  justify-content: space-evenly;
+  height: 60%;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.data p {
+  margin-bottom: 5px;
+}
+.ninja {
+  font-weight: bold;
+  font-size: xx-large;
+  
+}
+.righSide {
+  align-self: center;
+  font-size: larger;
+}
+.righSide span {
+  text-decoration: underline;
+  color: blue;
+}
+aside p {
+  font-size: x-large;
+}
+aside span {
+  font-weight: bold;
+  
+}
+button,
+#search,
+aside,
+section {
+  border: solid black 3px;
+}
+button {
+  box-shadow: 3px 3px 3px 2px black;
+}
+#login-button {
+  width: 5%;
+  background-color: #2978e3;
+  color: white;
+}
+section button {
+  background-color:rgb(255 214 105);
+  height: 30px;
+}
+#add-def {
+  background-color: #92c47c;
+  width: 80%;
+  height: 35px;
+}
+section p{
+
+font-size: x-large;
+
+}

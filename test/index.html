@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <form onsubmit="validateForm(event)" id="ff">
+    <fieldset>
+<legend>login info</legend>
+      <label for="in">username</label>
+<input type="text" id="in" name="username" value="" >
+<br>
+<label for="pass">password</label>
+<input type="password" name="password" id="pass">
+<br>
+<label for="country">country</label>
+<select name="country" id="country" onchange="check(this)"">
+  
+<option value="usa">united state of america</option>
+<option value="ksa">saudi arabia</option>
+<option id="re" value="pal" >palistine</option>
+<option value="jod">jordan</option>
+
+
+
+</select>
+<input type="submit" >
+</fieldset>
+  </form>
+  <button  onclick="re()">re</button>
+
+   <script src="dd.js"></script>
+</body>
+</html>
