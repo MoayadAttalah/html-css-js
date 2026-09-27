@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DojoWeather</title>
+    <meta
+      name="description"
+      content="DojoWeather shows the 4-day weather forecast for San Jose, Burbank, Chicago and Dallas, with daily highs and lows in Celsius or Fahrenheit."
+    />
+    <meta
+      name="keywords"
+      content="weather, forecast, DojoWeather, San Jose weather, Burbank weather, Chicago weather, Dallas weather, temperature, Celsius, Fahrenheit"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="right">
+        <p>DojoWeather</p>
+      </div>
+      <div id="lift">
+        <p onclick="load()">Burbank</p>
+        <p onclick="load()">Chicago</p>
+        <p onclick="load()">Dallas</p>
+      </div>
+    </header>
+
+    <nav>
+      <div class="current-city"><p>San Jose</p></div>
+      <div class="temperature-scale">
+        <p>show temperature in</p>
+        <select name="temperature" id="temperature" onchange="convertTemprature(this)">
+          <option value="celicus">°C |</option>
+          <option value="Fahrenheit">°F |</option>
+        </select>
+      </div>
+    </nav>
+
+    <section id="Today">
+      <p `>Today</p>
+      <img src="imges/some_rain.png" alt="some rain" />
+      <p>some rain</p>
+      <div>
+        <span class="max-temp">24°</span><span class="min-temp">18°</span>
+      </div>
+    </section>
+    <section id="Tomorrow">
+      <p class="day">Tomorrow</p>
+      <img src="imges/some_sun.png" alt="some sun" />
+      <p>some sun</p>
+      <div>
+        <span class="max-temp">27°</span><span class="min-temp">19°</span>
+      </div>
+    </section>
+    <section id="Friday">
+      <p class="day">Friday</p>
+      <img src="imges/some_clouds.png" alt="some clouds" />
+      <p>some clouds</p>
+      <div>
+        <span class="max-temp" >21°</span><span class="min-temp">16°</span>
+      </div>
+    </section>
+    <section id="Saturday">
+      <p class="day">Saturday</p>
+      <img src="imges/some_sun.png" alt="some sun" />
+      <p>some sun</p>
+      <div>
+        <span class="max-temp">26°</span><span class="min-temp">21°</span>
+      </div>
+    </section>
+
+    <footer id="foot">
+      <img src="imges/cookie.png" alt="cookie" />
+      <p>
+        <span>Stop! Cookie time</span><br />We use cookies (sadly not the edible
+        ones) to personalize <br />
+        content and ads, to provide social media features and to <br />analyse
+        our traffic. Read more...
+      </p>
+      <button onclick="acceptCookie()">I Accept</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
